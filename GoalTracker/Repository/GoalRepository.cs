@@ -83,5 +83,12 @@ namespace GoalTracker.Repository
             await EnsureGoalsLoaded();
             return this._goals;
         }
+
+        public async void CompletedGoalToday(Goal goalInstance)
+        {
+            var index = this._goals.IndexOf(goalInstance);
+            this._goals[index].AddDate();
+            await this.SaveGoalDataAsync();
+        }
     }
 }

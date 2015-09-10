@@ -20,7 +20,8 @@
                 Margin="34,182,0,0"
                 TextWrapping="Wrap"
                 VerticalAlignment="Top"
-                Height="125"
+                Height="60"
+                MaxLength="50" 
                 Width="332"/>
         <TextBox x:Name="goalNameTextBox"
                 HorizontalAlignment="Left"
@@ -37,7 +38,7 @@
         <Button x:Name="addButton"
                 Content="Add"
                 HorizontalAlignment="Left"
-                Margin="34,322,0,0"
+                Margin="34,260,0,0"
                 VerticalAlignment="Top"
                 Click="addButton_Click" />
     </Grid>
