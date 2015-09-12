@@ -1,14 +1,10 @@
 ﻿using GoalTracker.DataModel;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace GoalTracker.Commands
 {
-    public class CompletedButtonCommand : ICommand
+    public class GoalsCompletedButtonCommand : ICommand
     {
         public event EventHandler CanExecuteChanged;
 

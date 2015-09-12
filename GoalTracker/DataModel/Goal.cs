@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using GoalTracker.Commands;
+using System;
 using System.Collections.ObjectModel;
-using System.Windows.Input;
-using GoalTracker.Commands;
-using System.Runtime.Serialization;
 using System.ComponentModel;
+using System.Runtime.Serialization;
+using System.Windows.Input;
 
 namespace GoalTracker.DataModel
 {
@@ -27,7 +23,7 @@ namespace GoalTracker.DataModel
 
         public Goal()
         {
-            this.CompletedCommand = new CompletedButtonCommand();
+            this.CompletedCommand = new GoalsCompletedButtonCommand();
             this.Dates = new ObservableCollection<DateTime>();
         }
 

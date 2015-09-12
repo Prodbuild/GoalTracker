@@ -94,7 +94,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Commands\CompletedButtonCommand.cs" />
+    <Compile Include="Commands\GoalsCompletedButtonCommand.cs" />
     <Compile Include="DataModel\Goal.cs" />
     <Compile Include="Repository\GoalRepository.cs" />
     <Compile Include="MainPage.xaml.cs">

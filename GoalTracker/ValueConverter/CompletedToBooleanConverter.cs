@@ -4,12 +4,12 @@ using Windows.UI.Xaml.Data;
 
 namespace GoalTracker.ValueConverter
 {
-    class CompletedDatesToIntegerConverter : IValueConverter
+    public class CompletedToBooleanConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {
             ObservableCollection<DateTime> dates = (ObservableCollection<DateTime>)value;
-            return dates.Count;
+            return dates.Contains(DateTime.Today) ? false : true;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)
